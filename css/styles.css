@@ -565,8 +565,6 @@ body.menu-open .mobile-menu { display: flex; transform: none; opacity: 1; }
 
 .legal-callout { margin-top: 20px; padding: 16px 18px; border-radius: var(--r-md); background: var(--blue-soft); border: 1px solid #cfe2fb; font-size: 14.5px; color: var(--ink-2); font-weight: 500; line-height: 1.65; }
 .legal-callout strong { color: var(--blue-deep); }
-.legal-fill { margin-top: 20px; padding: 16px 18px; border-radius: var(--r-md); background: #fff8ec; border: 1px dashed #e6cf9a; font-size: 14px; color: #7a5a16; font-weight: 500; line-height: 1.6; }
-.legal-fill strong { color: #5e4410; }
 
 .legal-related { margin-top: 44px; padding-top: 26px; border-top: 1px solid var(--line); display: flex; gap: 14px; flex-wrap: wrap; }
 .legal-related a { font-size: 14px; font-weight: 700; color: var(--blue); padding: 9px 15px; border: 1px solid var(--line); border-radius: 999px; transition: border-color .14s, background .14s; }
