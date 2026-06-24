@@ -7,20 +7,24 @@ JS) so it deploys anywhere and loads instantly.
 ```
 website/
   index.html        # www.cataskkit.in — corporate landing + Attendly showcase
-  attendly.html     # /attendly.html — Attendly product detail page
+  attendly.html     # Attendly product detail page
+  terms.html        # legal — Terms & Conditions
+  privacy.html      # legal — Privacy Policy
+  refund.html       # legal — Refund & Cancellation Policy
+  shipping.html     # legal — Service Delivery (Shipping) Policy
+  contact.html      # legal — Contact Us
   css/styles.css    # all styles (theme matched to the Attendly app)
-  js/main.js        # nav, mobile drawer, scroll reveals
+  js/main.js        # nav, mobile drawer, scroll reveals, billing calculator
   assets/           # logo / favicon
-  CNAME             # custom domain for GitHub Pages
-  .nojekyll         # serve files as-is on GitHub Pages
+  .nojekyll         # legacy GitHub Pages marker — harmless, ignored by Vercel
 ```
 
 ## Two domains, two deployments
 
-| Domain | What lives there | Source |
-|--------|------------------|--------|
-| **www.cataskkit.in** | This marketing site | this `website/` folder |
-| **attendly.cataskkit.in** | The actual Attendly app | the `attendly/` React app |
+| Domain | What lives there | Hosting |
+|--------|------------------|---------|
+| **www.cataskkit.in** | This marketing site | Vercel · repo `CATaskKit/cataskkit-website` |
+| **attendly.cataskkit.in** | The actual Attendly app | Vercel · repo `CATaskKit/attendly` |
 
 Every **"Create a workspace"** / **"Sign in"** button on this site points to
 `https://attendly.cataskkit.in/` — the marketing site never handles auth itself.
@@ -45,18 +49,34 @@ npx serve .
 python -m http.server 5173
 ```
 
-## Deploy to GitHub Pages (www.cataskkit.in)
+## Hosting & deploy (Vercel)
 
-1. Put this `website/` folder in its own repo (or a `gh-pages`-served subdir).
-2. In **Settings → Pages**, choose the branch/folder to deploy.
-3. The included `CNAME` sets the custom domain to `www.cataskkit.in`.
-4. At your DNS provider, add:
-   - `www`  → `CNAME` → `<user>.github.io`
-   - `attendly` → `CNAME` → wherever the Attendly app is hosted
-   - apex `cataskkit.in` → the four GitHub Pages `A` records (or an ALIAS/`www` redirect)
+The site is hosted on **Vercel**, deployed from the GitHub repo
+**`CATaskKit/cataskkit-website`**. It's a pure static site, so there is **no build
+step** — Vercel serves the files from the repo root:
 
-> Hosting on Vercel/Netlify instead? Just set the project root to this folder and
-> add `www.cataskkit.in` as a custom domain — no build step needed.
+- **Framework Preset:** Other
+- **Build Command:** _(none)_
+- **Output Directory:** _(repo root)_
+
+Push to `main` → Vercel auto-deploys. Vercel provisions and renews the TLS
+certificate automatically (no manual cert step).
+
+### DNS (managed at Wix — `ns8.wixdns.net`)
+
+| Type | Host | Value |
+|------|------|-------|
+| CNAME | `www` | `cname.vercel-dns.com` |
+| A | `@` (apex) | Vercel's apex IP (shown in the Vercel **Domains** panel) |
+| CNAME | `attendly` | the Attendly app's Vercel target |
+
+In the Vercel project's **Settings → Domains**, add `www.cataskkit.in`, and add
+`cataskkit.in` set to **redirect → `www.cataskkit.in`**.
+
+> **History:** this site was originally on GitHub Pages, but its TLS certificate
+> would not provision for the custom domain, so it was moved to Vercel (matching
+> the Attendly app). The GitHub Pages site has been disabled and the old `CNAME`
+> file removed.
 
 ## Theme
 
