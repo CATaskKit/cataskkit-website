@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CATaskKit — Workplace tools that run themselves</title>
+  <meta name="description" content="CATaskKit builds clean, modern software for back-office teams. Meet Attendly — attendance, leave, payroll & reimbursements in one place. Free for teams up to 5." />
+  <meta name="theme-color" content="#1573e6" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="CATaskKit — Workplace tools that run themselves" />
+  <meta property="og:description" content="Meet Attendly: attendance, leave, payroll & reimbursements in one place. Free for teams up to 5." />
+  <meta property="og:url" content="https://www.cataskkit.in" />
+  <meta property="og:image" content="https://www.cataskkit.in/assets/cataskkit-logo.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" type="image/png" href="assets/cataskkit-logo.png" />
+  <link rel="canonical" href="https://www.cataskkit.in/" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ========================= NAV ========================= -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="/" class="brand" aria-label="CATaskKit home">
+        <img src="assets/cataskkit-logo.png" alt="CATaskKit" />
+      </a>
+      <nav class="nav__links">
+        <a href="#products">Products</a>
+        <a href="#features">Features</a>
+        <a href="#how">How it works</a>
+        <a href="#pricing">Pricing</a>
+        <a href="attendly.html">Attendly</a>
+      </nav>
+      <div class="nav__cta">
+        <a class="nav__signin" href="https://attendly.cataskkit.in/" target="_blank" rel="noopener">Sign in</a>
+        <a class="btn btn--grad btn--sm" href="https://attendly.cataskkit.in/?signup=1" target="_blank" rel="noopener">
+          Create a workspace
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <button class="nav__burger" id="burger" aria-label="Menu"><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- mobile drawer -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#products">Products</a>
+    <a href="#features">Features</a>
+    <a href="#how">How it works</a>
+    <a href="#pricing">Pricing</a>
+    <a href="attendly.html">Attendly</a>
+    <a class="btn btn--ghost" href="https://attendly.cataskkit.in/" target="_blank" rel="noopener">Sign in</a>
+    <a class="btn btn--grad" href="https://attendly.cataskkit.in/?signup=1" target="_blank" rel="noopener">Create a workspace</a>
+  </div>
+
+  <!-- ========================= HERO ========================= -->
+  <section class="hero">
+    <div class="hero__bg"></div>
+    <div class="hero__grid-overlay"></div>
+    <div class="wrap hero__inner">
+      <div class="hero__copy">
+        <span class="eyebrow reveal">✦ The CATaskKit suite</span>
+        <h1 class="reveal d1">Workplace tools that <span class="grad-text">run&nbsp;themselves.</span></h1>
+        <p class="hero__sub reveal d2">CATaskKit builds clean, dependable software for the back office. Our first product, <b>Attendly</b>, handles attendance, leave, payroll and reimbursements — so your team can stop chasing spreadsheets.</p>
+        <div class="hero__cta reveal d3">
+          <a class="btn btn--grad btn--lg" href="https://attendly.cataskkit.in/?signup=1" target="_blank" rel="noopener">
+            Create a workspace
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a class="btn btn--ghost btn--lg" href="#products">Explore the suite</a>
+        </div>
+        <div class="hero__note reveal d4">
+          <span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Free for up to 5 employees</span>
+          <span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> No credit card</span>
+          <span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Live in minutes</span>
+        </div>
+      </div>
+
+      <!-- product visual -->
+      <div class="hero__visual reveal d2">
+        <div class="chip chip--1 float">
+          <span class="ic" style="background:var(--sky-soft)"><svg viewBox="0 0 24 24" fill="none" stroke="#2ba3f0" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+          <div>Checked in<small>9:02 AM · On time</small></div>
+        </div>
+        <div class="chip chip--2 float" style="animation-delay:-3s">
+          <span class="ic" style="background:var(--blue-soft)"><svg viewBox="0 0 24 24" fill="none" stroke="#1573e6" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></span>
+          <div>Payroll ready<small>Run in 1 click</small></div>
+        </div>
+
+        <div class="dash float" style="animation-delay:-1.5s">
+          <div class="dash__bar">
+            <i></i><i></i><i></i>
+            <span class="url">attendly.cataskkit.in/admin</span>
+          </div>
+          <div class="dash__body">
+            <aside class="dash__side">
+              <div class="dash__logo"><span class="mk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>Attendly</div>
+              <nav class="dash__nav">
+                <div class="on"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="9"/><rect x="14" y="3" width="7" height="5"/><rect x="14" y="12" width="7" height="9"/><rect x="3" y="16" width="7" height="5"/></svg>Dashboard</div>
+                <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>Employees</div>
+                <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>Leave</div>
+                <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 14l4-4 3 3 5-6"/></svg>Attendance</div>
+                <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>Payroll</div>
+              </nav>
+            </aside>
+            <main class="dash__main">
+              <div class="dash__h"><h4>Today at a glance</h4><span class="pill">● Live</span></div>
+              <div class="kpis">
+                <div class="kpi"><div class="lbl">Present</div><div class="val">47<span>/52</span></div></div>
+                <div class="kpi"><div class="lbl">On leave</div><div class="val">3</div></div>
+                <div class="kpi"><div class="lbl">Late</div><div class="val">2</div></div>
+              </div>
+              <div class="chart">
+                <div class="lbl" style="font-size:11px;font-weight:700;color:var(--ink-3);text-transform:uppercase;letter-spacing:.05em">Attendance · this week</div>
+                <div class="row">
+                  <b style="height:62%"></b><b style="height:78%"></b><b style="height:54%"></b><b style="height:88%"></b><b style="height:71%"></b><b style="height:40%"></b><b style="height:30%"></b>
+                </div>
+              </div>
+            </main>
+          </div>
+        </div>
+
+        <!-- phone overlay -->
+        <div class="phone">
+          <div class="phone__screen">
+            <div class="phone__hero">
+              <div class="t">Good morning, Aarav</div>
+              <div class="big">You're checked in</div>
+              <div class="phone__ring"><b>7h 12m</b></div>
+            </div>
+            <div class="phone__body">
+              <div class="phone__card"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></span><div class="ln"><i></i><i></i></div></div>
+              <div class="phone__card"><span class="ic g"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></span><div class="ln"><i></i><i></i></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= STATS STRIP ========================= -->
+  <div class="strip">
+    <div class="wrap strip__inner">
+      <div class="strip__item reveal"><b class="grad-text">1‑click</b><span>Payroll & exports</span></div>
+      <div class="strip__item reveal d1"><b class="grad-text">Real‑time</b><span>Attendance tracking</span></div>
+      <div class="strip__item reveal d2"><b class="grad-text">100%</b><span>Tenant‑isolated data</span></div>
+      <div class="strip__item reveal d3"><b class="grad-text">Web + App</b><span>Admin & employee</span></div>
+    </div>
+  </div>
+
+  <!-- ========================= PRODUCTS ========================= -->
+  <section class="section" id="products">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Our products</span>
+        <h2>One suite. Built to remove busywork.</h2>
+        <p>We're building focused tools for back-office teams. Start with the flagship — more are on the way.</p>
+      </div>
+
+      <!-- Attendly flagship -->
+      <div class="product-card reveal">
+        <div class="product-card__info">
+          <div class="product-card__logo">
+            <span class="mk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+            <div><b>Attendly</b><small>by CATaskKit · Live now</small></div>
+          </div>
+          <h3>HR &amp; attendance, without the headache</h3>
+          <p>Geo-tagged check-in, leave workflows, payroll, reimbursements and one-click reports — for the whole company, on web and a native mobile app.</p>
+          <ul class="product-card__list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Check-in &amp; attendance</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Leave &amp; approvals</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Payroll &amp; comp-off</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Reimbursements</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Announcements</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Excel reports</li>
+          </ul>
+          <div class="product-card__cta">
+            <a class="btn btn--grad" href="https://attendly.cataskkit.in/?signup=1" target="_blank" rel="noopener">
+              Create a workspace
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a class="btn btn--ghost" href="attendly.html">See everything Attendly does</a>
+          </div>
+        </div>
+        <div class="product-card__media">
+          <div class="media-card" style="background:#fff;padding:0;overflow:hidden;border-radius:var(--r-lg)">
+            <div class="dash" style="transform:none;box-shadow:none;border:none;width:100%">
+              <div class="dash__bar"><i></i><i></i><i></i><span class="url">attendly.cataskkit.in</span></div>
+              <div class="dash__body">
+                <aside class="dash__side">
+                  <div class="dash__logo"><span class="mk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>Attendly</div>
+                  <nav class="dash__nav">
+                    <div class="on"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="9"/><rect x="14" y="3" width="7" height="5"/><rect x="14" y="12" width="7" height="9"/><rect x="3" y="16" width="7" height="5"/></svg>Dashboard</div>
+                    <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>Employees</div>
+                    <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>Leave</div>
+                    <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>Payroll</div>
+                  </nav>
+                </aside>
+                <main class="dash__main">
+                  <div class="dash__h"><h4>Leave approvals</h4><span class="pill">3 pending</span></div>
+                  <div class="phone__card" style="margin-bottom:9px"><span class="ic" style="background:var(--sky-soft)"><svg viewBox="0 0 24 24" fill="none" stroke="#2ba3f0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></span><div class="ln"><i style="width:60%"></i><i style="width:38%"></i></div><span class="pill">Casual · 2d</span></div>
+                  <div class="phone__card" style="margin-bottom:9px"><span class="ic" style="background:var(--blue-soft)"><svg viewBox="0 0 24 24" fill="none" stroke="#1573e6" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></span><div class="ln"><i style="width:52%"></i><i style="width:44%"></i></div><span class="pill" style="background:#f8eedb;color:#cf870f">Sick · 1d</span></div>
+                  <div class="chart" style="margin-top:4px">
+                    <div class="row"><b style="height:50%"></b><b style="height:70%"></b><b style="height:60%"></b><b style="height:90%"></b><b style="height:66%"></b></div>
+                  </div>
+                </main>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- coming soon -->
+      <div class="soon reveal">
+        <div class="soon__card">
+          <span class="tag">Coming soon</span>
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg></div>
+          <h4>Billing &amp; GST</h4>
+          <p>Invoicing and compliance-ready billing for Indian businesses.</p>
+        </div>
+        <div class="soon__card">
+          <span class="tag">Coming soon</span>
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div>
+          <h4>Tasks &amp; workflows</h4>
+          <p>Assign, track and automate the recurring work your team forgets.</p>
+        </div>
+        <div class="soon__card">
+          <span class="tag">On the roadmap</span>
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
+          <h4>Documents</h4>
+          <p>A shared vault for contracts, payslips and policy docs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= FEATURES ========================= -->
+  <section class="section" id="features" style="background:var(--bg-2)">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow sky">Inside Attendly</span>
+        <h2>Everything HR needs, nothing it doesn't</h2>
+        <p>A complete attendance &amp; people platform — for owners, HR, managers and every employee.</p>
+      </div>
+      <div class="features">
+        <div class="feature reveal">
+          <div class="feature__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <h3>Geo check-in / out</h3>
+          <p>One-tap attendance with location and live status. Late, present and on-leave roll up to the dashboard in real time.</p>
+        </div>
+        <div class="feature reveal d1">
+          <div class="feature__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18M8 14h.01M12 14h.01M16 14h.01"/></svg></div>
+          <h3>Leave &amp; approvals</h3>
+          <p>Employees apply, managers approve, balances update automatically. Cancel pending requests in a tap.</p>
+        </div>
+        <div class="feature reveal d2">
+          <div class="feature__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+          <h3>Payroll &amp; comp-off</h3>
+          <p>Salary payable computed from basic minus LOP. Comp-off is auto-derived from weekend &amp; holiday attendance.</p>
+        </div>
+        <div class="feature reveal">
+          <div class="feature__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12V8H6a2 2 0 0 1-2-2c0-1.1.9-2 2-2h12v4"/><path d="M4 6v12a2 2 0 0 0 2 2h14v-4"/><path d="M18 12a2 2 0 0 0 0 4h4v-4z"/></svg></div>
+          <h3>Reimbursements</h3>
+          <p>Submit expense claims with receipts, route via manager to HR, bulk-approve, mark paid and export a ZIP of receipts.</p>
+        </div>
+        <div class="feature reveal d1">
+          <div class="feature__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l18-5v12L3 14v-3zM11.6 16.8a3 3 0 1 1-5.8-1.6"/></svg></div>
+          <h3>Announcements</h3>
+          <p>Post org-wide notices. Employees get a bell notification and you see read receipts across the team.</p>
+        </div>
+        <div class="feature reveal d2">
+          <div class="feature__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h8M8 9h2"/></svg></div>
+          <h3>Excel reports &amp; export</h3>
+          <p>A full, editable HR database with styled multi-sheet <code style="font-family:var(--mono);font-size:.9em">.xlsx</code> export — attendance, leave, payroll, all of it.</p>
+        </div>
+        <div class="feature reveal">
+          <div class="feature__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2.5"/><path d="M12 18h.01"/></svg></div>
+          <h3>Native mobile app</h3>
+          <p>Employees get a polished Android app — check in, view balances, apply for leave and file claims from their phone.</p>
+        </div>
+        <div class="feature reveal d1">
+          <div class="feature__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></div>
+          <h3>Secure &amp; isolated</h3>
+          <p>Every record is scoped to your organization with row-level security. Owners, HR, managers and employees each see exactly what they should.</p>
+        </div>
+        <div class="feature reveal d2">
+          <div class="feature__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.6 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.6a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9z"/></svg></div>
+          <h3>Guided onboarding</h3>
+          <p>An 8-step setup wizard gets your company, work week, holidays and team configured in minutes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= HOW IT WORKS ========================= -->
+  <section class="section" id="how">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Get started</span>
+        <h2>From sign-up to attendance in minutes</h2>
+        <p>No demos to sit through, no sales calls. Create a workspace and you're the owner.</p>
+      </div>
+      <div class="steps">
+        <div class="step reveal">
+          <div class="step__n">1</div>
+          <h3>Create your workspace</h3>
+          <p>Sign up with your work email and company name. You become the Owner and the guided wizard opens automatically.</p>
+        </div>
+        <div class="step reveal d1">
+          <div class="step__n">2</div>
+          <h3>Invite your team</h3>
+          <p>Add employees by email or bulk-import. Each person sets a password and joins with their work email — on web or the mobile app.</p>
+        </div>
+        <div class="step reveal d2">
+          <div class="step__n">3</div>
+          <h3>Run the day</h3>
+          <p>Employees check in, apply for leave and file claims. You approve, run payroll and export reports — all from one dashboard.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= MOBILE SPLIT ========================= -->
+  <section class="section" style="background:var(--bg-2)">
+    <div class="wrap split">
+      <div class="split__media reveal">
+        <div class="media-card">
+          <div class="bigphone float">
+            <div class="bigphone__notch"></div>
+            <div class="bigphone__scr">
+              <div class="bp__hero">
+                <div class="hi">Good morning,</div>
+                <div class="nm">Aarav Mehta</div>
+                <div class="bp__ring"><span class="st">Working</span><span class="tm">7h 12m</span></div>
+                <div class="bp__btn">Check out</div>
+              </div>
+              <div class="bp__body">
+                <div class="bp__sec">Quick actions</div>
+                <div class="bp__row"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></span><div><b>Apply for leave</b><small>2 casual left</small></div></div>
+                <div class="bp__row"><span class="ic g"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12V8H6a2 2 0 0 1-2-2c0-1.1.9-2 2-2h12v4"/><path d="M4 6v12a2 2 0 0 0 2 2h14v-4"/><path d="M18 12a2 2 0 0 0 0 4h4v-4z"/></svg></span><div><b>New reimbursement</b><small>Attach a receipt</small></div><span class="amt">₹0</span></div>
+                <div class="bp__row"><span class="ic a"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l18-5v12L3 14v-3z"/></svg></span><div><b>Town hall · Fri 4pm</b><small>New announcement</small></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="split__copy reveal d1">
+        <span class="eyebrow sky">For employees</span>
+        <h2 style="margin-top:18px">The whole workplace, in their pocket</h2>
+        <p>Attendly's employee app is mobile-first and beautifully simple. People do their HR admin in seconds — no training required.</p>
+        <ul class="split__list">
+          <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span><div><b>One-tap check-in</b><span>Mark attendance with location, see live hours worked.</span></div></li>
+          <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></span><div><b>Leave at a glance</b><span>Balances, history and pending requests, always up to date.</span></div></li>
+          <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg></span><div><b>Claims with receipts</b><span>Snap a photo, submit a reimbursement, track it to payout.</span></div></li>
+        </ul>
+        <div style="margin-top:30px">
+          <a class="btn btn--grad" href="https://attendly.cataskkit.in/" target="_blank" rel="noopener">Open the app</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= PRICING ========================= -->
+  <section class="section" id="pricing">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Pricing</span>
+        <h2>Free to start. Fair as you grow.</h2>
+        <p>Every workspace gets a 1-year period the moment it onboards. Up to 5 employees is free — forever. Above that, simple per-employee pricing, billed annually.</p>
+      </div>
+
+      <!-- interactive price calculator -->
+      <div class="calc reveal" id="calc">
+        <div class="calc__controls">
+          <div class="calc__label">
+            <span>How many employees?</span>
+            <div class="calc__count">
+              <input type="number" id="empInput" min="1" max="2000" value="12" inputmode="numeric" aria-label="Number of employees" />
+              <span>people</span>
+            </div>
+          </div>
+          <input type="range" id="empRange" min="1" max="150" step="1" value="12" class="calc__slider" aria-label="Employees" />
+          <div class="calc__ticks"><span>1</span><span>5</span><span>50</span><span>100</span><span>150+</span></div>
+          <label class="calc__addon" for="addonToggle">
+            <input type="checkbox" id="addonToggle" />
+            <span class="calc__switch" aria-hidden="true"></span>
+            <div><b>Add reimbursements</b><small>Expense claims with receipts · ₹5/emp/mo (free for ≤5)</small></div>
+          </label>
+        </div>
+        <div class="calc__result" aria-live="polite">
+          <div class="calc__plan" id="calcPlan">Business plan</div>
+          <div class="calc__rate" id="calcRate">₹20 / employee / month</div>
+          <div class="calc__total">
+            <div class="calc__big" id="calcAnnual">₹2,880</div>
+            <div class="calc__per" id="calcPer">per year · ₹240/mo</div>
+          </div>
+          <div class="calc__lines" id="calcLines"></div>
+          <a class="btn btn--white calc__cta" href="https://attendly.cataskkit.in/?signup=1" target="_blank" rel="noopener">
+            Create this workspace
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <div class="calc__note" id="calcNote">Billed annually · upgrades mid-year are prorated</div>
+        </div>
+      </div>
+
+      <div class="pricing">
+        <div class="price reveal">
+          <h3>Starter</h3>
+          <div class="price__seats">Up to 5 employees</div>
+          <div class="price__free grad-text">Free</div>
+          <div style="font-size:13px;color:var(--ink-3);font-weight:600;margin-top:-8px">forever · renews free</div>
+          <ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> All core HR features</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Attendance &amp; leave</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Payroll &amp; reports</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Mobile app</li>
+          </ul>
+          <a class="btn btn--ghost" href="https://attendly.cataskkit.in/?signup=1" target="_blank" rel="noopener">Start free</a>
+        </div>
+
+        <div class="price price--featured reveal d1">
+          <span class="price__tag">Most popular</span>
+          <h3>Growth</h3>
+          <div class="price__seats">6–10 employees</div>
+          <div class="price__amt"><span class="cur">₹</span><span class="num">25</span><span class="per">/emp / mo</span></div>
+          <div style="font-size:13px;color:var(--ink-3);font-weight:600;margin-top:4px">billed annually</div>
+          <ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Everything in Starter</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Unlimited approvals</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Priority support</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Prorated seat upgrades</li>
+          </ul>
+          <a class="btn btn--grad" href="https://attendly.cataskkit.in/?signup=1" target="_blank" rel="noopener">Get started</a>
+        </div>
+
+        <div class="price reveal d2">
+          <h3>Business</h3>
+          <div class="price__seats">11–50 employees</div>
+          <div class="price__amt"><span class="cur">₹</span><span class="num">20</span><span class="per">/emp / mo</span></div>
+          <div style="font-size:13px;color:var(--ink-3);font-weight:600;margin-top:4px">billed annually</div>
+          <ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Everything in Growth</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Bulk employee import</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Advanced MIS reports</li>
+          </ul>
+          <a class="btn btn--ghost" href="https://attendly.cataskkit.in/?signup=1" target="_blank" rel="noopener">Get started</a>
+        </div>
+
+        <div class="price reveal d3">
+          <h3>Scale</h3>
+          <div class="price__seats">51+ employees</div>
+          <div class="price__amt"><span class="cur">₹</span><span class="num">18</span><span class="per">/emp / mo</span></div>
+          <div style="font-size:13px;color:var(--ink-3);font-weight:600;margin-top:4px">₹15 above 100 · billed annually</div>
+          <ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Everything in Business</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Best per-seat rate</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Dedicated onboarding</li>
+          </ul>
+          <a class="btn btn--ghost" href="https://attendly.cataskkit.in/?signup=1" target="_blank" rel="noopener">Get started</a>
+        </div>
+      </div>
+
+      <div class="addon reveal">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12V8H6a2 2 0 0 1-2-2c0-1.1.9-2 2-2h12v4"/><path d="M4 6v12a2 2 0 0 0 2 2h14v-4"/><path d="M18 12a2 2 0 0 0 0 4h4v-4z"/></svg></span>
+        <div>
+          <h4>Reimbursements add-on</h4>
+          <p>Expense claims, receipt uploads, manager routing, bulk payout and ZIP export. Free for teams of 5 or fewer.</p>
+        </div>
+        <div class="amt"><b>₹5</b><span>/ employee / mo · annual</span></div>
+      </div>
+
+      <p class="pricing-note">Raising your seat cap mid-year charges <b>only the difference, prorated</b> for the days left in your period. Pay securely via UPI, cards or netbanking with Razorpay.</p>
+    </div>
+  </section>
+
+  <!-- ========================= FAQ ========================= -->
+  <section class="section section--tight" style="background:var(--bg-2)">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">FAQ</span>
+        <h2>Questions, answered</h2>
+      </div>
+      <div class="faq">
+        <details class="faq__item reveal">
+          <summary>How is Attendly different from a spreadsheet?<span class="pl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+          <div class="a">It's a real multi-tenant platform: employees check in from their phone, leave and reimbursements flow through approvals automatically, payroll is computed for you, and everything exports to Excel when you need it. No formulas to maintain, no version mix-ups.</div>
+        </details>
+        <details class="faq__item reveal">
+          <summary>Is it really free for small teams?<span class="pl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+          <div class="a">Yes. Up to 5 employees is free for your whole 1-year period and renews free — with all core features and the mobile app. You only pay once you grow past 5 seats.</div>
+        </details>
+        <details class="faq__item reveal">
+          <summary>Where does the actual work happen?<span class="pl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+          <div class="a">This site (cataskkit.in) is our home. The product itself — sign-in, your admin console, onboarding and the employee app — lives at <b>attendly.cataskkit.in</b>. Every "Create a workspace" and "Sign in" button takes you straight there.</div>
+        </details>
+        <details class="faq__item reveal">
+          <summary>Can employees use it on their phone?<span class="pl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+          <div class="a">Absolutely — the employee experience is a polished, mobile-first native Android app. Owners, HR and managers use the desktop/web admin console for setup, approvals, payroll and reports.</div>
+        </details>
+        <details class="faq__item reveal">
+          <summary>How secure is our data?<span class="pl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+          <div class="a">Every record is scoped to your organization with database row-level security, so one company can never see another's data. Roles (owner, HR, manager, employee) control exactly what each person can access.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= CTA ========================= -->
+  <section class="section">
+    <div class="wrap">
+      <div class="cta-banner reveal">
+        <h2>Bring your workplace online today</h2>
+        <p>Create your Attendly workspace in minutes — free for up to 5 employees, no card required.</p>
+        <div class="btns">
+          <a class="btn btn--white btn--lg" href="https://attendly.cataskkit.in/?signup=1" target="_blank" rel="noopener">
+            Create a workspace
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a class="btn btn--light btn--lg" href="https://attendly.cataskkit.in/" target="_blank" rel="noopener">Sign in</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= FOOTER ========================= -->
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <img src="assets/cataskkit-logo.png" alt="CATaskKit" />
+          <p>Clean, dependable software for back-office teams. Made in India for businesses everywhere.</p>
+          <div class="footer__social">
+            <a href="https://attendly.cataskkit.in/" target="_blank" rel="noopener" aria-label="Attendly app">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+            </a>
+            <a href="mailto:hello@cataskkit.in" aria-label="Email">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h5>Product</h5>
+          <a href="attendly.html">Attendly</a>
+          <a href="#features">Features</a>
+          <a href="#pricing">Pricing</a>
+          <a href="https://attendly.cataskkit.in/" target="_blank" rel="noopener">Open the app</a>
+        </div>
+        <div class="footer__col">
+          <h5>Company</h5>
+          <a href="#products">Products</a>
+          <a href="#how">How it works</a>
+          <a href="mailto:hello@cataskkit.in">Contact</a>
+        </div>
+        <div class="footer__col">
+          <h5>Get started</h5>
+          <a href="https://attendly.cataskkit.in/?signup=1" target="_blank" rel="noopener">Create a workspace</a>
+          <a href="https://attendly.cataskkit.in/" target="_blank" rel="noopener">Sign in</a>
+          <a href="https://attendly.cataskkit.in/?join=1" target="_blank" rel="noopener">Join your team</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div>© <span id="year">2026</span> CATaskKit. All rights reserved.</div>
+        <div class="made">Built with care in India 🇮🇳</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
